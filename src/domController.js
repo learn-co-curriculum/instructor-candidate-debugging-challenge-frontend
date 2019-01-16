@@ -11,17 +11,9 @@ function updateGravatar(identicon) {
 }
 
 function updateComments(comments) {
-  clearComments()
   comments.map(function(c) {
     addComment(c)
   })
-}
-
-function clearComments() {
-  container = document.getElementById("commentsContainer")
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
-  }
 }
 
 function addComment(comment) {
