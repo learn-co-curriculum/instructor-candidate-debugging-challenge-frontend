@@ -1,28 +1,30 @@
-# Instructor Candidate Debugging Challenge
+# JavaScript Debugging Challenge
 
-The goal of this challenge is to imitate a student/teacher interaction for an instructor candidate. The setting is as follows: the "student" brings some code they are working on to the "instructor", who will go through various errors to help the student achieve some desired functionality. In this case, the student is trying to implement a `POST` request on an api (instructions for running the server can be found below) which loads comments for the student's pre-existing [Gravatar Generator](https://github.com/learn-co-curriculum/js-gravatar-creator).
+This challenge is meant to test an applicant's ability to help a student debug a vanilla JavaScript application. Type of bugs include: DOM manipulation, DOM events, typos, scoping, user interaction.
 
-The idea is that we can simultaneously assess a candidate's debugging skills and their ability to be patient with students and give thorough, precise explanations.
+## Student background
 
-You can find a fully functional version of the app in the `solution` branch. However, we want the candidate to go through the following steps, fixing each bug to help the student create a functional comment form. We expect every interview to be different, so your mileage may vary.
+The student is in their seventh week of the program and has been exposed to:
 
-The challenge has the following bugs:
+* HTML,
+* CSS,
+* procedural JavaScript,
+* DOM manipulation,
+* DOM events,
+* Promises, and
+* XHR/fetch requests
 
-1. New comment handler is set on the wrong form
-  - **important note:** because the `newComment` handler is attached to the wrong form, creating a new gravatar will create comments that are undefined. Use `flatiron` as your sample gravatar as it already has comments seeded in the db. The sample comments should be appended to the `#comments-container` div.
-2. Student forgets `event.preventDefault()` in the `newComment` handler, causing the form to `POST`
-3. Student doesn't get input value correctly in the `newComment` handler
-4. Student uses result of fetch improperly
-5. Student doesn't clear comment container when loading new comments
 
----
+## Deliverables
 
-### Running the Server
+1. As a user, I can create a gravatar based on a phrase
+2. As a user, I can add a comment to the gravatar
+3. As a user, I can add another comment without clearing the input
 
-- This project uses a package called [`json-server`](https://github.com/typicode/json-server) that relies on a `db.json` file to fake a RESTful JSON api
+## First issue
 
-To install and run the server:
+I'm building an app that allows a user to type in a phrase and get a pixelated image generated for it. Once an image is generated, the user should be able to add a comment to it and the comment should render below the image.
 
-`$ npm i -g json-server`
+The problem that I'm running into is that I can't seem to submit the comment form for the image. The code to create the image and the code to add a comment works, but the comment form always refreshes the page.
 
-`$ json-server --watch db.json`
+> **Interviewers:** Please see [the interviewer README](/INTERVIEWER.md) for step-by-step instructions for setting up and running this part of the interview.
