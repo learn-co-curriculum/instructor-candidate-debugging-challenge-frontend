@@ -33,12 +33,7 @@ student is in their seventh week of the program and has been exposed to:
 
 To start, clone down this repo and make sure JSON server is installed:
 
-```sh
-git clone git@github.com:learn-co-curriculum/instructor-candidate-debugging-challenge-frontend.git
-npm i -g json-server
-```
-
-In one console, run the following commands:
+Run the following commands:
 
 ```sh
 cd instructor-candidate-debugging-challenge-frontend
@@ -50,7 +45,9 @@ In the browser, generate a gravatar with the text "flatiron" first since the
 database is already seeded with comments for this phrase.
 
 All coding for this challenge will happen in the `src/index.js` file. **No other
-file needs to be changed**. If a candidate wants to look at other files, try to steer them back to `index.js`.
+file needs to be changed**. If a candidate wants to look at other files, try to steer them back to `index.js`. You can use the excuse:
+
+> My code was working perfectly before I this comments feature, and I've only made changes to index.js.
 
 ### 1. The page refreshes when I try to add a comment
 
@@ -160,6 +157,8 @@ show up in the comments list.
 ### 3 (Optional). Comment input box doesn't clear on submission of comment form
 
 #### Problem
+
+At this point, we have a working app. If time permits, we want to try to clear the input field.
 
 From the student:
 
