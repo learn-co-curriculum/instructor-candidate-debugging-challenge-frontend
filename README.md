@@ -89,21 +89,7 @@ to solve on your own before continuing
 
 ...
 
-The goal is to get the form to submit without the page refreshing. One of the
-first issues identified might be that the `newComment` event listener is being
-added to the wrong form. Instead of attaching it to `commentForm`, it's
-currently being attached to `form`:
-
-```js
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("identicon-form")
-  form.addEventListener("submit", handleSubmit)
-  const commentForm = document.getElementById("comment-form")
-  commentForm.addEventListener("submit", newComment)          // updated line; form > commentForm
-})
-```
-
-After just making this one change, the page should still refresh. In order to
+In order to
 prevent the page from refreshing, you will need to prevent the default form
 submission; using `event.preventDefault()` does the trick in the event handler.
 
