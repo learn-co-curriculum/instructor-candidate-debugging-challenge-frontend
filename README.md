@@ -49,9 +49,8 @@ json-server --watch db.json
 In the browser, generate a gravatar with the text "flatiron" first since the
 database is already seeded with comments for this phrase.
 
-All coding for this challenge will happen in the `src/index.js` file. No other
-file needs to be changed, but you may be interested in what is in the other
-files.
+All coding for this challenge will happen in the `src/index.js` file. **No other
+file needs to be changed**. If a candidate wants to look at other files, try to steer them back to `index.js`.
 
 ### 1. The page refreshes when I try to add a comment
 
@@ -158,7 +157,7 @@ Refresh the page, put "flatiron" in the image/gravatar input box and click
 box and click "Submit". The page should not refresh. The comment text should
 show up in the comments list.
 
-### 3. Comment input box doesn't clear on submission of comment form
+### 3 (Optional). Comment input box doesn't clear on submission of comment form
 
 #### Problem
 
