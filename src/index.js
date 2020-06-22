@@ -16,7 +16,8 @@ function loadComments(gravatar) {
 }
 
 function newComment(e) {
-  comment = e.target.value
+  e.preventDefault()
+  comment = e.target[0].value
   gravatar = document.getElementById("identicon-form")[0].value
 
   fetch(`http://localhost:3000/comments`, {
@@ -38,5 +39,5 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("identicon-form")
   form.addEventListener("submit", handleSubmit)
   const commentForm = document.getElementById("comment-form")
-  form.addEventListener("submit", newComment)
+  commentForm.addEventListener("submit", newComment)
 })

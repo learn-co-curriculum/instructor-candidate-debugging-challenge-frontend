@@ -11,6 +11,8 @@ function updateGravatar(identicon) {
 }
 
 function updateComments(comments) {
+  container = document.getElementById("commentsContainer")
+  container.innerHTML = ""
   comments.map(function(c) {
     addComment(c)
   })
