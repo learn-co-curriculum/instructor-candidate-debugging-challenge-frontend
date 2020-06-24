@@ -1,5 +1,7 @@
 # JavaScript Debugging Challenge
 
+**This version of the technical interview is meant to take 30 minutes.** It has 1 less major bug than the master version. 
+
 This challenge is meant to test your ability to walk through the proocess of
 debugging code and was originally designed for recent graduates applying to
 become Software Engineering Coaches. Although the content is built for this
