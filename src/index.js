@@ -1,14 +1,11 @@
-// VARIABLES ///////////////////////////////////////////////////////////////
+let commentsContainer = document.getElementById("commentsContainer")
 
-const commentsContainer = document.getElementById("commentsContainer")
-
-const form = document.getElementById("identicon-form")
+let form = document.getElementById("identicon-form")
 form.addEventListener("submit", handleSubmit)
 
-const commentForm = document.getElementById("comment-form")
+let commentForm = document.getElementById("comment-form")
 form.addEventListener("submit", newComment)
 
-// DOM MANIPULATION ///////////////////////////////////////////////////////////////
 
 function addComment(comment) {
   let p = document.createElement("p")
@@ -22,7 +19,6 @@ function updateComments(comments) {
   })
 }
 
-// EVENT HANDLERS ///////////////////////////////////////////////////////////////
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -41,7 +37,9 @@ function loadComments(gravatar) {
   )
 }
 
+
 function newComment(e) {
+  // WHY ISN'T THIS WORKING???
   const comment = e.target.value
   const gravatar = document.getElementById("identicon-form")[0].value
 
