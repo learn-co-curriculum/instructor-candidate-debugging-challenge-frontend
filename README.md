@@ -13,19 +13,19 @@ If you are giving the interview, you can find instructions in [INTERVIEWER.md](I
 
 This challenge has you building out an application
 with prebuilt HTML and some started code. You have access to an `Identicon`
-class which creates a unique gravatar on the DOM based on a phrase. You 
+class which creates a unique gravatar on the DOM based on a phrase. You
 also have a json file which serves as your database for comments
 associated with the gravatars and its your job to fetch the comments for a
 gravatar and allow users to submit new comments for them as well.
 
-This challenge has no tests associated with it so be sure to test your code 
+This challenge has no tests associated with it so be sure to test your code
 in the browser as you go!
 
 ## Deliverables
 
 1. As a user, I can create a gravatar based on a phrase
 2. As a user, I can add a comment to the gravatar
-3. As a user, I can add another comment without clearing the input
+3. As a user, I can add another comment without refreshing the page
 
 ## Getting Started
 
