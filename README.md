@@ -25,7 +25,7 @@ in the browser as you go!
 
 1. As a user, I can create a gravatar based on a phrase
 2. As a user, I can add a comment to the gravatar
-3. As a user, I can add another comment without clearing the input
+3. As a user, I can add another comment without refreshing the page
 
 ## Getting Started
 
